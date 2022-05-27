@@ -12,7 +12,7 @@ df = pd.read_csv('/Users/daianeklein/Documents/DataScience/Data-Viz/Plotly-Dash/
 
 def encode_image(image_file):
     encoded = base64.b64encode(open(image_file, 'rb').read())
-    return 'data:image/png;base64,{}'.format(encoded.decode())
+    return f'data:image/png;base64,{encoded.decode()}'
 
 app.layout = html.Div([
     html.Div([
